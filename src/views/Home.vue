@@ -1,18 +1,44 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Calendar
+      @gotcha="setMedia"
+      :darkTheme="darkTheme"
+    />
+    <Media
+      v-if="media"
+      v-bind:media="media" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Calendar from '../components/Calendar'
+import Media from '../components/Media'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Calendar,
+    Media
+  },
+
+  data () {
+    return {
+      media: ''
+    }
+  },
+  props: {
+    darkTheme: Boolean
+  },
+  methods: {
+    setMedia (resJson) {
+      this.media = resJson
+    },
+    toggleTheme () {
+      this.darkTheme = !this.darkTheme
+    }
   }
 }
 </script>
+
+<style scoped>
+</style>

@@ -1,24 +1,11 @@
-# 01.nasaapod
+# :rocket: NASA APOD
 
-## Project setup
-```
-npm install
-```
+Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Check Live
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[NASA APOD](https://nasaapod.thigoap.vercel.app/)
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Screenshot
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![NASAAPOD](https://user-images.githubusercontent.com/11902225/87689112-33e94400-c75e-11ea-8fa9-e6812a716aa1.png)
