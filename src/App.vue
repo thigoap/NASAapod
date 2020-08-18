@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="theme">
-      <div class="app-container">
+    <div class="app-container">
       <Header :darkTheme="darkTheme" @changeTheme="toggleTheme" />
       <router-view :darkTheme="darkTheme" />
       <Footer />

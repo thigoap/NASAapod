@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <div><h3>{{ media.title }}</h3></div>
+    <div><h3>{{ media.title }}</h3><br></div>
     <div>
       <div v-if="media.media_type === 'image'">
         <img v-bind:src="media.url"/>

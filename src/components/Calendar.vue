@@ -45,10 +45,11 @@ export default {
       return moment(date).format('YYYY-MM-DD')
     },
     fetchData (date) {
+      this.$emit('startLoad', true)
       const formattedDate = this.formatDate(this.date)
       fetch(`https://nasaapod.thigoap.vercel.app/api/${formattedDate}`)
         .then(res => res.json())
-        .then(result => { this.$emit('gotcha', result) })
+        .then(result => { this.$emit('gotMedia', result) })
     }
   }
 }
