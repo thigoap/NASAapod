@@ -5,6 +5,7 @@
     </a>
     <nav>
       <router-link to="/">Home</router-link> |
+      <router-link to="/gallery">Gallery</router-link> |
       <router-link to="/about">About</router-link> |
       <i class="fas fa-sun" v-if="darkTheme" @click="toggleTheme"></i>
       <i class="fas fa-moon" v-else @click="toggleTheme"></i>
@@ -28,12 +29,15 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .icon {
   padding-top: 8px;
   width: 56px;
   height: auto;
+}
+
+nav {
+  margin-bottom: 4px;
 }
 
 i {

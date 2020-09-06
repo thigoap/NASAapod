@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div class="rocket-wrapper">
-      <i class="fas fa-rocket"></i>
-    </div>
+  <div id="loading">
+    <i class="fas fa-rocket"></i>
   </div>
 </template>
 
@@ -13,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
-.rocket-wrapper {
+#loading {
   font-size: 40px;
   margin-top: 32px;
   display: flex;
@@ -22,7 +20,7 @@ export default {
   animation: rocket 700ms linear infinite both;
 }
 
-.theme--dark .rocket-wrapper {
+.theme--dark #loading {
   color: white;
 }
 

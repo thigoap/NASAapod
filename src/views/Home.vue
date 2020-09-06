@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <Calendar
       @gotMedia="setMedia"
       @startLoad="startLoadAnim"
@@ -9,7 +9,7 @@
       v-if="isLoading"/>
     <Media
       v-if="media && !isLoading"
-      v-bind:media="media" />
+      :media="media" />
   </div>
 </template>
 
